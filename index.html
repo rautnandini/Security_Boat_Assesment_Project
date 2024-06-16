@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Front-End</title>
+	<style type="text/css">
+		#d1
+		{
+			 border: 4px white solid;
+			height: 80px;
+			width: 80px;
+			margin-top: -500px;
+			margin-right: 1200px;
+			position: absolute; 
+			rotate:40deg;
+
+		}
+		#d2
+		{
+			border: 4px red solid;
+			height: 50px;
+			width: 50px;
+			margin-top: -500px;
+			margin-right: 1200px;
+			position: absolute; 
+			rotate:40deg;
+
+		}
+		#d3
+		{
+			border: 4px red solid;
+			height: 50px;
+			width: 50px;
+			margin-top: 500px;
+			margin-left: 1200px;
+			position: absolute; 
+			rotate:40deg;
+
+		}
+		#d4
+		{
+			border: 4px white solid;
+			height: 80px;
+			width: 80px;
+			margin-top: 500px;
+			margin-left: 1200px;
+			position: absolute; 
+			rotate:40deg;
+		}
+		#d5
+		{
+			border: 4px white solid;
+			height: 80px;
+			width: 80px;
+			margin-top: -359px;
+			margin-right: 1040px;
+			position: absolute; 
+			rotate:40deg;
+		}
+		#d6
+		{
+			border: 4px red solid;
+			height: 50px;
+			width: 50px;
+			margin-top: -359px;
+			margin-right: 1040px;
+			position: absolute; 
+			rotate:40deg;
+		}
+		#d7
+		{
+			border: 4px red solid;
+			height: 50px;
+			width: 50px;
+			margin-top: 359px;
+			margin-left: 1040px;
+			position: absolute; 
+			rotate:40deg;
+
+		}
+		#d8
+		{
+			border: 4px white solid;
+			height: 80px;
+			width: 80px;
+			margin-top: 359px;
+			margin-left: 1040px;
+			position: absolute; 
+			rotate:40deg;
+		}
+
+		
+		
+	</style>
+</head>
+<body>
+	<div id="d1"></div> <div id="d2"></div>
+	<div id="d3"></div> <div id="d4"></div>
+	<div id="d5"></div> <div id="d6"></div>
+	<div id="d7"></div> <div id="d8"></div>	
+	
+
+	
+    <div className="App">
+      <header className="App-header">
+        <h1 align="center" style="font-size: 50px; color: white;" >Welcome!</h1>
+        <h3 align="center" style="color: white;">LogIn To Continue</h3>
+        
+        <input type="text" name="username" id="user1" placeholder="Enter Username"></input><div align="center" style="color: white;">username="admin"</div><br></br>
+        <input type="password" name="password" id="pass1" placeholder="Enter Username"></input><div align="center" style="color: white;">password="admin@123"</div><br></br><br></br><br></br>
+        <button type="button" onclick="jumpToDashboard()" id="btn1">Login</button>
+     <script type="text/javascript">
+        function jumpToDashboard() {
+          var username = document.getElementById('user1').value;
+          var password = document.getElementById('pass1').value;
+
+          if (username === 'admin' && password === 'admin@123') {
+            window.location.href = 'dashboard.html';
+          } else {
+            alert('Invalid username or password');
+          }
+        }
+      </script>
+
+        
+      </header>
+    </div>
+        
+     
+
+</body>
+</html>
